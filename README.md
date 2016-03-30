@@ -239,7 +239,7 @@ var xmlAsStr = x2js.json2xml_str( jsonObj );
         else {
             xhttp=new ActiveXObject("Microsoft.XMLHTTP");
         }
-        xhttp.open("GET",dname,false);
+        xhttp.open("GET",dname,true);
         xhttp.send();
         return xhttp.responseXML;
     }
